@@ -37,7 +37,6 @@
 /****************/
 
 .item-digital {
-    flex-grow: 1;
     width: 100%;
     max-width: 38.4rem;
 }
@@ -72,12 +71,12 @@
     padding: 2.4rem;
 }
 
-.card-post .tag{
+.card-post .tag {
     padding: 0.8rem 2.2rem;
     background-color: rgba(255, 255, 255, 0.10);
     border-radius: 100px;
     display: inline-block;
-    
+
     color: var(--gray-100);
     font-family: "Sora", sans-serif;
     font-size: 1.4rem;
@@ -87,7 +86,7 @@
     margin-bottom: 4.5rem;
 }
 
-.card-post .image{
+.card-post .image {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,17 +94,64 @@
     margin-bottom: 6.4rem;
 }
 
-.card-post .text{
+.card-post .text {
     width: 100%;
     max-width: 50.8rem;
 }
 
-.card-post .text h6{
+.card-post .text h6 {
     color: var(--gray-100);
     margin-bottom: 0.8rem;
 }
 
-.card-post .text p{
+.card-post .text p {
     font-size: 1.6rem;
     color: var(--gray-600);
+}
+
+@media (max-width: 991px) {
+
+    /** SECTION DIGITAL **/
+    .item-digital {
+        text-align: center;
+    }
+
+    .item-digital .icon {
+        margin: 0 auto;
+        margin-bottom: 1.6rem;
+    }
+
+    .item-digital p br {
+        display: none;
+    }
+}
+
+@media (max-width: 568px) {
+
+    /** SECTION DIGITAL **/
+    .item-digital .info p {
+        font-size: 1.8rem;
+        max-width: 31.9rem;
+    }
+
+    /** SECTION ART **/
+    .card-post {
+        padding: 1.6rem;
+    }
+
+    .card-post .image {
+        margin-bottom: 5.4rem;
+    }
+
+    .card-post .text h6 {
+        font-size: 1.8rem;
+    }
+
+    .card-post .text p {
+        font-size: 1.4rem;
+    }
+
+    .section-art .container .all-cards {
+        gap: 3.2rem;
+    }
 }
