@@ -49,7 +49,7 @@ header .container nav .menu-list li a:hover {
 /****************/
 .section-hero {
     width: 100%;
-    padding-top: 11.3rem; 
+    padding-top: 11.3rem;
 
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@ header .container nav .menu-list li a:hover {
     /*****************************/
     position: relative;
     /*****************************/
-    
+
 }
 
 .section-hero .text h1 {
@@ -135,27 +135,176 @@ header .container nav .menu-list li a:hover {
     left: 5.5rem;
     bottom: 1.7rem;
 }
+
 /*****************************/
 
 
 /*******************/
 /**SECTION DIGITAL**/
 /*******************/
-.section-digital{
+.section-digital {
     padding-top: 12.8rem;
-    
+
 }
 
-.section-digital h3{
+.section-digital h3 {
     max-width: 53.5rem;
     margin: 0 auto;
     margin-bottom: 6.4rem;
     text-align: center;
 }
 
-.section-digital ul{
+.section-digital ul {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--gray-800);
     padding-bottom: 12.8rem;
+}
+
+/****************/
+/**SECTION ART**/
+/****************/
+
+.section-art {
+    padding: 12.8rem 0;
+}
+
+.section-art .container .title-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.4rem;
+}
+
+.section-art .container .title-text .left h3 {
+    letter-spacing: -1.2px;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.section-art .container .title-text .left {
+    max-width: 53.9rem;
+}
+
+.section-art .container .title-text p {
+    letter-spacing: -0.54px;
+}
+
+.section-art .container .title-text .left p {
+    max-width: 45.2rem;
+}
+
+.section-art .container .title-text>p {
+    max-width: 42.9rem;
+}
+
+.section-art .all-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+}
+
+.section-art .all-cards .card-post:first-child {
+    grid-column: span 2;
+}
+
+/**********************/
+/**SECTION NEWSLETTER**/
+/**********************/
+
+.section-newsletter {
+    background-color: var(--pink-10);
+    padding: 8.9rem 0;
+}
+
+.section-newsletter .container {
+    text-align: center;
+}
+
+.section-newsletter h2 {
+    max-width: 64.6rem;
+    letter-spacing: -3px;
+
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+}
+
+.section-newsletter p {
+    max-width: 68.7rem;
+    color: var(--gray-100);
+
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+}
+
+/**********/
+/**FOOTER**/
+/**********/
+
+footer {
+    padding: 4.8rem 0;
+}
+
+footer .container .main-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-bottom: 6.4rem;
+    border-bottom: 1px solid var(--gray-800);
+    margin-bottom: 2.4rem;
+}
+
+footer .container .main-area .left {
+    max-width: 27.9rem;
+}
+
+footer .container .main-area .left p{
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: -0.48px;
+    margin-top: 2.4rem;
+}
+
+footer .container .main-area .right {
+    flex-grow: 1;
+    max-width: 79.2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .main-area .right .item-nav h6 {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+    margin-bottom: 3.2rem;
+}
+
+footer .container .main-area .right .item-nav ul li:not(:last-child) {
+    margin-bottom: 3.2rem;
+}
+
+footer .container .main-area .right .item-nav ul li a{
+    color: var(--gray-600);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px;
+
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+footer .container .main-area .right .item-nav ul li a:hover{
+    color: var(--gray-100);
+}
+
+footer .container .copy {
+    color: var(--gray-600);
+    letter-spacing: -0.48px;
 }
